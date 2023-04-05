@@ -16,9 +16,4 @@ public class SceneController : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
-
-    //public void BringBackTheScene()
-    //{
-    //    SceneManager.LoadScene(SceneManager.GetActiveScene())
-    //}
 }
