@@ -1,4 +1,5 @@
-
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 
@@ -8,6 +9,8 @@ namespace WildBall.Inputs
 
     public class PlayerInput : MonoBehaviour
     {
+        [SerializeField] private GameObject _canvasLose;
+
         private Vector3 _movement;
 
         private PlayerMovement _playerMovement;
@@ -29,5 +32,15 @@ namespace WildBall.Inputs
         {
             _playerMovement.MoveCharecter(_movement);
         }
+
+        private void OnCollisionEnter(Collision collision)
+        {
+            if (collision.gameObject.tag == "Zone_Lose")
+            {
+                _canvasLose.SetActive(true);
+                Time.timeScale = 0;
+            }
+        }
+
     }
 }

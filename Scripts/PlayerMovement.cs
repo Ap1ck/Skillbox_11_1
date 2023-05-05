@@ -6,7 +6,7 @@ namespace WildBall.Inputs
 
     public class PlayerMovement : MonoBehaviour
     {
-        [SerializeField,Range(0,500)] private float _speed;
+        [SerializeField, Range(0, 500)] private float _speed;
 
         private Rigidbody _rigidBody;
 
@@ -17,7 +17,7 @@ namespace WildBall.Inputs
 
         public void MoveCharecter(Vector3 movement)
         {
-            _rigidBody.AddForce(movement * _speed*Time.fixedDeltaTime);
+            _rigidBody.AddForce(movement * _speed * Time.fixedDeltaTime);
         }
     }
 }
