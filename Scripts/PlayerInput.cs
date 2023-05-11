@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
 namespace WildBall.Inputs
 {
     [RequireComponent(typeof(PlayerMovement))]
@@ -10,6 +9,9 @@ namespace WildBall.Inputs
     public class PlayerInput : MonoBehaviour
     {
         [SerializeField] private GameObject _canvasLose;
+        [SerializeField] private ParticleSystem _particle;
+
+        private Animator _animations;
 
         private Vector3 _movement;
 
@@ -17,7 +19,9 @@ namespace WildBall.Inputs
 
         private void Awake()
         {
+            _animations = GetComponent<Animator>();
             _playerMovement = GetComponent<PlayerMovement>();
+            
         }
 
         private void Update()
@@ -37,9 +41,18 @@ namespace WildBall.Inputs
         {
             if (collision.gameObject.tag == "Zone_Lose")
             {
+                _particle.gameObject.SetActive(true);
+                _particle.Play();
                 _canvasLose.SetActive(true);
-                Time.timeScale = 0;
+                Coroutine coroutine = StartCoroutine(timer());
             }
+        }
+
+        private IEnumerator timer()
+        {
+            _animations.SetTrigger("Died");
+            yield return new WaitForSecondsRealtime(0.7f);
+            Time.timeScale = 0;
         }
 
     }

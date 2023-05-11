@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace WildBall.Inputs
 {
-    //[RequireComponent(typeof(Rigidbody))]
+    [RequireComponent(typeof(Rigidbody))]
 
     public class PlayerMovement : MonoBehaviour
     {

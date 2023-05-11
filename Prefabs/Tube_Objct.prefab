@@ -44,8 +44,8 @@ GameObject:
   - component: {fileID: 4991092770701398387}
   - component: {fileID: 4991092770701398391}
   - component: {fileID: 4991092770701398390}
-  - component: {fileID: 4991092770701398389}
   - component: {fileID: 4991092770701398388}
+  - component: {fileID: 1556246428288479250}
   m_Layer: 0
   m_Name: Tube
   m_TagString: Untagged
@@ -61,8 +61,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4991092770701398386}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.20000009, y: 1.0753039, z: 0.2}
+  m_LocalPosition: {x: 0, y: -0.067, z: 0}
+  m_LocalScale: {x: 0.27802506, y: 1.0753039, z: 0.13446529}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4991092769803809656}
@@ -118,20 +118,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &4991092770701398389
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4991092770701398386}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!95 &4991092770701398388
 Animator:
   serializedVersion: 4
@@ -152,6 +138,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!136 &1556246428288479250
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4991092770701398386}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.31339005
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: -0.15878735, y: -2.143753e-16, z: -0.0135623375}
 --- !u!1 &7791105904206776077
 GameObject:
   m_ObjectHideFlags: 0
