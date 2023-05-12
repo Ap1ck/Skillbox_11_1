@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace WildBall.Inputs
 {
@@ -32,6 +33,7 @@ namespace WildBall.Inputs
             _movement = new Vector3(horizontal, 0, vertical).normalized;
         }
 
+
         private void FixedUpdate()
         {
             _playerMovement.MoveCharecter(_movement);
@@ -51,7 +53,7 @@ namespace WildBall.Inputs
         private IEnumerator timer()
         {
             _animations.SetTrigger("Died");
-            yield return new WaitForSecondsRealtime(0.7f);
+            yield return new WaitForSecondsRealtime(1f);
             Time.timeScale = 0;
         }
 
