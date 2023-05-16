@@ -11,7 +11,8 @@ namespace WildBall.Inputs
     {
         [SerializeField] private GameObject _canvasLose;
         [SerializeField] private ParticleSystem _particle;
-
+        [SerializeField] private Image _menu;
+ 
         private Animator _animations;
 
         private Vector3 _movement;
@@ -22,17 +23,21 @@ namespace WildBall.Inputs
         {
             _animations = GetComponent<Animator>();
             _playerMovement = GetComponent<PlayerMovement>();
-            
+            Cursor.lockState = CursorLockMode.Locked;
         }
 
         private void Update()
         {
             float horizontal = Input.GetAxis(GlobalStringVariors.Horizontal);
             float vertical = Input.GetAxis(GlobalStringVariors.Vertical);
-
             _movement = new Vector3(horizontal, 0, vertical).normalized;
-        }
 
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                _menu.gameObject.SetActive(true);
+                Cursor.lockState = CursorLockMode.Confined;
+            }
+        }
 
         private void FixedUpdate()
         {
@@ -43,10 +48,11 @@ namespace WildBall.Inputs
         {
             if (collision.gameObject.tag == "Zone_Lose")
             {
+                Cursor.lockState = CursorLockMode.Confined;
                 _particle.gameObject.SetActive(true);
                 _particle.Play();
                 _canvasLose.SetActive(true);
-                Coroutine coroutine = StartCoroutine(timer());
+                Coroutine timerPanel = StartCoroutine(timer());
             }
         }
 
@@ -56,6 +62,5 @@ namespace WildBall.Inputs
             yield return new WaitForSecondsRealtime(1f);
             Time.timeScale = 0;
         }
-
     }
 }

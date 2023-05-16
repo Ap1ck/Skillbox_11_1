@@ -17,4 +17,9 @@ public class SceneController : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         Time.timeScale = 1;
     }
+
+    public void LockedCursor()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+    }
 }
