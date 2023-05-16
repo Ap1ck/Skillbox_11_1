@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System;
 
 namespace WildBall.Inputs
 {
@@ -14,7 +15,7 @@ namespace WildBall.Inputs
         [SerializeField] private ParticleSystem _particle;
         [SerializeField] private Image _menu;
 
-        private int _quantity=0;
+        private  int _quantity=0;
 
         private Animator _animations;
 
@@ -62,11 +63,13 @@ namespace WildBall.Inputs
         private void OnEnable()
         {
             StarController._coin += TakeCoin;
+            ResultWinner._winnerImage += ShowWinner;
         }
 
         private void OnDisable()
         {
             StarController._coin -= TakeCoin;
+            ResultWinner._winnerImage -= ShowWinner;
         }
 
         private void TakeCoin(int value)
@@ -80,6 +83,11 @@ namespace WildBall.Inputs
             _animations.SetTrigger("Died");
             yield return new WaitForSecondsRealtime(1f);
             Time.timeScale = 0;
+        }
+
+        public void ShowWinner(Image image)
+        {
+            image.gameObject.SetActive(true);      
         }
     }
 }

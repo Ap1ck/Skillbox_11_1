@@ -272,7 +272,7 @@ GameObject:
   - component: {fileID: 2926663219486164401}
   m_Layer: 3
   m_Name: Door
-  m_TagString: Untagged
+  m_TagString: Door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -353,7 +353,7 @@ GameObject:
   - component: {fileID: 6351645165763765611}
   m_Layer: 3
   m_Name: PTK_SlidingDoor_Medium 1
-  m_TagString: Untagged
+  m_TagString: Door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

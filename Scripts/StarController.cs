@@ -11,7 +11,7 @@ public class StarController : MonoBehaviour
 
     private Animator _starAnimation;
 
-    private int _quintitiCoin=1;
+    private int _quantityCoin = 1;
 
     public static event Action<int> _coin;
 
@@ -22,9 +22,12 @@ public class StarController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        _coin?.Invoke(_quintitiCoin);
-        _starAnimation.SetTrigger("Destroy");
-        Coroutine star = StartCoroutine(deleted());
+        if (other.gameObject.tag == "Player")
+        {
+            _coin?.Invoke(_quantityCoin);
+            _starAnimation.SetTrigger("Destroy");
+            Coroutine star = StartCoroutine(deleted());
+        }
     }
 
     private IEnumerator deleted()

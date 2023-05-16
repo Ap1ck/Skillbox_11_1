@@ -230,6 +230,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _starPartical: {fileID: 5840333303040281292}
+--- !u!114 &8345015387056424729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4005121240165757118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85742ea905fa4dd49bcc3d77faf3db4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _coinText: {fileID: 0}
 --- !u!4 &4005121240165788830 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4789263001950883948, guid: c278e9a8cf9208c4d9f9dba9be796546, type: 3}
