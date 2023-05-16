@@ -233,7 +233,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4336160792282553635, guid: c44b0b13d17992f40add6c267c6de06f, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4336160793053989953, guid: c44b0b13d17992f40add6c267c6de06f, type: 3}
       propertyPath: m_Pivot.x
@@ -331,6 +331,14 @@ PrefabInstance:
       propertyPath: m_AdditionalShaderChannelsFlag
       value: 25
       objectReference: {fileID: 0}
+    - target: {fileID: 5933432532849762876, guid: c44b0b13d17992f40add6c267c6de06f, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6358661994517600500, guid: c44b0b13d17992f40add6c267c6de06f, type: 3}
+      propertyPath: m_Text
+      value: 'Star:'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c44b0b13d17992f40add6c267c6de06f, type: 3}
 --- !u!114 &25656928 stripped
@@ -342,6 +350,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &25656929 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6358661994517600500, guid: c44b0b13d17992f40add6c267c6de06f, type: 3}
+  m_PrefabInstance: {fileID: 25656927}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &118265120
@@ -5503,6 +5522,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 25656928}
     - target: {fileID: 6021861185178394579, guid: 9f759168e29f5654ab0e303e6927a84f, type: 3}
+      propertyPath: _text
+      value: 
+      objectReference: {fileID: 25656929}
+    - target: {fileID: 6021861185178394579, guid: 9f759168e29f5654ab0e303e6927a84f, type: 3}
       propertyPath: _particle
       value: 
       objectReference: {fileID: 8983393795646683546, guid: 2571b75c4b55ee844b26403d09d9ae61, type: 3}
@@ -6362,7 +6385,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1755932792780801711, guid: b9f8a0287d261eb4385857b061bf55cd, type: 3}
       propertyPath: m_Size.y
-      value: 5
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1755932792780801711, guid: b9f8a0287d261eb4385857b061bf55cd, type: 3}
       propertyPath: m_IsTrigger

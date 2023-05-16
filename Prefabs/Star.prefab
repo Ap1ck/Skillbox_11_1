@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 4789263001947492428}
   - component: {fileID: 4789263001948590732}
   - component: {fileID: 4789263001958154124}
-  - component: {fileID: 728875373338775056}
   m_Layer: 0
   m_Name: Star
   m_TagString: Untagged
@@ -95,7 +94,7 @@ Animator:
   m_GameObject: {fileID: 4789263001950850124}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 704a7479eaed03d4ab7cb0f4a9de3073, type: 2}
+  m_Controller: {fileID: 9100000, guid: de1efd243dd6f8c4c83f140e40460cac, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -105,16 +104,3 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!65 &728875373338775056
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4789263001950850124}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 3.322694, y: 3.4577174, z: 1.6893768}
-  m_Center: {x: -0.045747757, y: -0.06350793, z: -0.11833191}

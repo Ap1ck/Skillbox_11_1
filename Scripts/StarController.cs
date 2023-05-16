@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 [RequireComponent(typeof(Collider))]
 
@@ -8,7 +9,10 @@ public class StarController : MonoBehaviour
 {
     [SerializeField] private ParticleSystem _starPartical;
 
+    public static Action<int> takeStar;
     private Animator _starAnimation;
+
+    private int _quantity=1;
 
     private void Start()
     {
@@ -17,8 +21,9 @@ public class StarController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        _starAnimation.SetTrigger("12");
+        _starAnimation.SetTrigger("Destroy");
         Coroutine star = StartCoroutine(deleted());
+        takeStar?.Invoke(_quantity);
     }
 
     private IEnumerator deleted()

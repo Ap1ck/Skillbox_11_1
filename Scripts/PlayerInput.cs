@@ -9,10 +9,13 @@ namespace WildBall.Inputs
 
     public class PlayerInput : MonoBehaviour
     {
+        [SerializeField] private Text _text;
         [SerializeField] private GameObject _canvasLose;
         [SerializeField] private ParticleSystem _particle;
         [SerializeField] private Image _menu;
- 
+
+        private int _quantity=0;
+
         private Animator _animations;
 
         private Vector3 _movement;
@@ -44,6 +47,16 @@ namespace WildBall.Inputs
             _playerMovement.MoveCharecter(_movement);
         }
 
+        private void OnEnable()
+        {
+            StarController.takeStar += AddQuantityStar;
+        }
+
+        private void OnDisable()
+        {
+            StarController.takeStar -= AddQuantityStar;
+        }
+
         private void OnCollisionEnter(Collision collision)
         {
             if (collision.gameObject.tag == "Zone_Lose")
@@ -54,6 +67,12 @@ namespace WildBall.Inputs
                 _canvasLose.SetActive(true);
                 Coroutine timerPanel = StartCoroutine(timer());
             }
+        }
+
+        private void AddQuantityStar(int value)
+        {
+            _quantity += value;
+            _text.text += value.ToString();
         }
 
         private IEnumerator timer()
