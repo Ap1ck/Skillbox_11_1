@@ -47,16 +47,6 @@ namespace WildBall.Inputs
             _playerMovement.MoveCharecter(_movement);
         }
 
-        private void OnEnable()
-        {
-            StarController.takeStar += AddQuantityStar;
-        }
-
-        private void OnDisable()
-        {
-            StarController.takeStar -= AddQuantityStar;
-        }
-
         private void OnCollisionEnter(Collision collision)
         {
             if (collision.gameObject.tag == "Zone_Lose")
@@ -69,10 +59,20 @@ namespace WildBall.Inputs
             }
         }
 
-        private void AddQuantityStar(int value)
+        private void OnEnable()
+        {
+            StarController._coin += TakeCoin;
+        }
+
+        private void OnDisable()
+        {
+            StarController._coin -= TakeCoin;
+        }
+
+        private void TakeCoin(int value)
         {
             _quantity += value;
-            _text.text += value.ToString();
+            _text.text ="Star:"+ _quantity.ToString();
         }
 
         private IEnumerator timer()

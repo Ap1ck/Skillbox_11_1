@@ -9,10 +9,11 @@ public class StarController : MonoBehaviour
 {
     [SerializeField] private ParticleSystem _starPartical;
 
-    public static Action<int> takeStar;
     private Animator _starAnimation;
 
-    private int _quantity=1;
+    private int _quintitiCoin=1;
+
+    public static event Action<int> _coin;
 
     private void Start()
     {
@@ -21,9 +22,9 @@ public class StarController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        _coin?.Invoke(_quintitiCoin);
         _starAnimation.SetTrigger("Destroy");
         Coroutine star = StartCoroutine(deleted());
-        takeStar?.Invoke(_quantity);
     }
 
     private IEnumerator deleted()

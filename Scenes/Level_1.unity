@@ -221,6 +221,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PL_Star2
       objectReference: {fileID: 0}
+    - target: {fileID: 8494894864471953892, guid: a0b596e07825d164ba8b2ba6375a52f6, type: 3}
+      propertyPath: m_TagString
+      value: Star
+      objectReference: {fileID: 0}
     - target: {fileID: 8494894864471953895, guid: a0b596e07825d164ba8b2ba6375a52f6, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -353,6 +357,10 @@ PrefabInstance:
     - target: {fileID: 8494894864471953892, guid: a0b596e07825d164ba8b2ba6375a52f6, type: 3}
       propertyPath: m_Name
       value: PL_Star3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8494894864471953892, guid: a0b596e07825d164ba8b2ba6375a52f6, type: 3}
+      propertyPath: m_TagString
+      value: Star
       objectReference: {fileID: 0}
     - target: {fileID: 8494894864471953895, guid: a0b596e07825d164ba8b2ba6375a52f6, type: 3}
       propertyPath: m_RootOrder
@@ -509,6 +517,10 @@ PrefabInstance:
     - target: {fileID: 8494894864471953892, guid: a0b596e07825d164ba8b2ba6375a52f6, type: 3}
       propertyPath: m_Name
       value: PL_Star1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8494894864471953892, guid: a0b596e07825d164ba8b2ba6375a52f6, type: 3}
+      propertyPath: m_TagString
+      value: Star
       objectReference: {fileID: 0}
     - target: {fileID: 8494894864471953895, guid: a0b596e07825d164ba8b2ba6375a52f6, type: 3}
       propertyPath: m_RootOrder

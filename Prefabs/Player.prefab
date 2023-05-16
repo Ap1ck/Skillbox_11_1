@@ -120,6 +120,7 @@ MonoBehaviour:
   _canvasLose: {fileID: 0}
   _particle: {fileID: 0}
   _menu: {fileID: 0}
+  _starController: {fileID: 0}
 --- !u!114 &6021861185178394576
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -132,7 +133,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 874fdf7d5c3f17f439447a4c659a49db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 249
+  _speed: 230
 --- !u!135 &6021861185178394577
 SphereCollider:
   m_ObjectHideFlags: 0
