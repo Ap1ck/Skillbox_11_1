@@ -10,6 +10,7 @@ namespace WildBall.Inputs
     {
         [SerializeField] private Text _coinText;
         [SerializeField] private Image _image;
+        [SerializeField] private Text _quantityStar;
 
         public static event Action<Image> _winnerImage;
 
@@ -32,9 +33,10 @@ namespace WildBall.Inputs
             _coinText.text = "Star quantity: " + _quantityCoin.ToString();
         }
 
-        private void OnTriggerEnter(Collider other)
+        private void OnCollisionEnter(Collision other)
         {
             _winnerImage?.Invoke(_image);
+            _quantityStar.gameObject.SetActive(false);
         }
     }
 }

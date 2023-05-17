@@ -370,6 +370,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8345015387056424729, guid: a0b596e07825d164ba8b2ba6375a52f6, type: 3}
+      propertyPath: _image
+      value: 
+      objectReference: {fileID: 901168958}
+    - target: {fileID: 8345015387056424729, guid: a0b596e07825d164ba8b2ba6375a52f6, type: 3}
+      propertyPath: _coinText
+      value: 
+      objectReference: {fileID: 2063093356}
+    - target: {fileID: 8345015387056424729, guid: a0b596e07825d164ba8b2ba6375a52f6, type: 3}
+      propertyPath: _quantityStar
+      value: 
+      objectReference: {fileID: 1104242724}
     - target: {fileID: 8494894864471953892, guid: a0b596e07825d164ba8b2ba6375a52f6, type: 3}
       propertyPath: m_Name
       value: PL_Star
@@ -2380,6 +2392,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 37
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &901168958 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1259247206096619581, guid: 5b85e99ffd5887f4b8a1d3fe727ea7fe, type: 3}
+  m_PrefabInstance: {fileID: 1125024456}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &907788702
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2894,6 +2917,17 @@ Transform:
   m_Father: {fileID: 888132773}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1104242724 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9026366668751327944, guid: 5b85e99ffd5887f4b8a1d3fe727ea7fe, type: 3}
+  m_PrefabInstance: {fileID: 1125024456}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1125024456
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2905,6 +2939,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2926663219486164401, guid: 5b85e99ffd5887f4b8a1d3fe727ea7fe, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4355505241284952100, guid: 5b85e99ffd5887f4b8a1d3fe727ea7fe, type: 3}
+      propertyPath: _openDoor
+      value: 
+      objectReference: {fileID: 901168958}
     - target: {fileID: 6396310290024695565, guid: 5b85e99ffd5887f4b8a1d3fe727ea7fe, type: 3}
       propertyPath: m_Name
       value: PTK_SlidingDoor_Medium 1
@@ -5119,6 +5161,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 939e3862182e50e4ca7a1a2937c3e5bf, type: 3}
+--- !u!114 &2063093356 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5305605410900552094, guid: 5b85e99ffd5887f4b8a1d3fe727ea7fe, type: 3}
+  m_PrefabInstance: {fileID: 1125024456}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2073746756
 PrefabInstance:
   m_ObjectHideFlags: 0

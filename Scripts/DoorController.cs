@@ -17,7 +17,7 @@ public class DoorController : MonoBehaviour
         _animator = GetComponent<Animator>();
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnCollisionEnter(Collision collision)
     {
         _animator.SetTrigger("OpenDoor");
 
@@ -25,7 +25,7 @@ public class DoorController : MonoBehaviour
         _isActive = true;
     }
 
-    private void OnTriggerExit(Collider other)
+    private void OnCollisionExit(Collision collision)
     {
         _openDoor.gameObject.SetActive(false);
         _isActive = false;
