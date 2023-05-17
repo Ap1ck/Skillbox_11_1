@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEditor;
 using System;
 
 namespace WildBall.Inputs
@@ -10,9 +11,10 @@ namespace WildBall.Inputs
 
     public class PlayerInput : MonoBehaviour
     {
-        [SerializeField] private Text _text;
+        [SerializeField] private Star _starObject;
         [SerializeField] private GameObject _canvasLose;
         [SerializeField] private ParticleSystem _particle;
+        [SerializeField] private Text _text;
         [SerializeField] private Image _menu;
 
         private  int _quantity=0;
@@ -22,6 +24,11 @@ namespace WildBall.Inputs
         private Vector3 _movement;
 
         private PlayerMovement _playerMovement;
+
+        private void Start()
+        {
+            _text.text = ": " + _starObject.AddStar(_quantity);
+        }
 
         private void Awake()
         {
@@ -75,7 +82,7 @@ namespace WildBall.Inputs
         private void TakeCoin(int value)
         {
             _quantity += value;
-            _text.text ="Star:"+ _quantity.ToString();
+            _text.text = ": " + _quantity.ToString();
         }
 
         private IEnumerator timer()

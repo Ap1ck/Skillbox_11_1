@@ -1672,7 +1672,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6358661994517600500, guid: c44b0b13d17992f40add6c267c6de06f, type: 3}
       propertyPath: m_Text
-      value: 'Star:'
+      value: ': 0'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6358661994517600500, guid: c44b0b13d17992f40add6c267c6de06f, type: 3}
+      propertyPath: m_FontData.m_Alignment
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 9061719470872982613, guid: c44b0b13d17992f40add6c267c6de06f, type: 3}
       propertyPath: m_IsActive
@@ -4299,6 +4303,10 @@ PrefabInstance:
       propertyPath: _canvasLose
       value: 
       objectReference: {fileID: 1805529744}
+    - target: {fileID: 6021861185178394579, guid: 9f759168e29f5654ab0e303e6927a84f, type: 3}
+      propertyPath: _starObject
+      value: 
+      objectReference: {fileID: 11400000, guid: 540b5726f2c3cba4cabf07f69d21abe7, type: 2}
     - target: {fileID: 6021861185178394583, guid: 9f759168e29f5654ab0e303e6927a84f, type: 3}
       propertyPath: m_Name
       value: Player
