@@ -231,6 +231,18 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4047118547152140014, guid: c44b0b13d17992f40add6c267c6de06f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1755932792084000955}
+    - target: {fileID: 4047118547152140014, guid: c44b0b13d17992f40add6c267c6de06f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 4047118547152140014, guid: c44b0b13d17992f40add6c267c6de06f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4336160792282553635, guid: c44b0b13d17992f40add6c267c6de06f, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -2947,6 +2959,10 @@ PrefabInstance:
       propertyPath: _openDoor
       value: 
       objectReference: {fileID: 901168958}
+    - target: {fileID: 5305605410900552094, guid: 5b85e99ffd5887f4b8a1d3fe727ea7fe, type: 3}
+      propertyPath: m_Text
+      value: 'Score quantity: 0'
+      objectReference: {fileID: 0}
     - target: {fileID: 6396310290024695565, guid: 5b85e99ffd5887f4b8a1d3fe727ea7fe, type: 3}
       propertyPath: m_Name
       value: PTK_SlidingDoor_Medium 1
@@ -5538,7 +5554,7 @@ PrefabInstance:
     - target: {fileID: 6021861185178394579, guid: 9f759168e29f5654ab0e303e6927a84f, type: 3}
       propertyPath: _particle
       value: 
-      objectReference: {fileID: 8983393795646683546, guid: 2571b75c4b55ee844b26403d09d9ae61, type: 3}
+      objectReference: {fileID: 1755932792084000956}
     - target: {fileID: 6021861185178394579, guid: 9f759168e29f5654ab0e303e6927a84f, type: 3}
       propertyPath: _canvasLose
       value: 
@@ -6407,11 +6423,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3157262058329998499, guid: b9f8a0287d261eb4385857b061bf55cd, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3212065655148887538, guid: b9f8a0287d261eb4385857b061bf55cd, type: 3}
       propertyPath: looping
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3212065655148887538, guid: b9f8a0287d261eb4385857b061bf55cd, type: 3}
       propertyPath: prewarm
@@ -6459,10 +6475,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3212065655148887538, guid: b9f8a0287d261eb4385857b061bf55cd, type: 3}
       propertyPath: EmissionModule.m_Bursts.Array.data[0].countCurve.scalar
-      value: 200
+      value: 250
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b9f8a0287d261eb4385857b061bf55cd, type: 3}
+--- !u!1 &1755932792084000955 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3157262058329998499, guid: b9f8a0287d261eb4385857b061bf55cd, type: 3}
+  m_PrefabInstance: {fileID: 1755932792084000954}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &1755932792084000956 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 3212065655148887538, guid: b9f8a0287d261eb4385857b061bf55cd, type: 3}
+  m_PrefabInstance: {fileID: 1755932792084000954}
+  m_PrefabAsset: {fileID: 0}
 --- !u!64 &2605261853391962968
 MeshCollider:
   m_ObjectHideFlags: 0
