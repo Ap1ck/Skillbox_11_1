@@ -8,34 +8,31 @@ namespace WildBall.Inputs
 {
     public class ResultWinner : MonoBehaviour
     {
-        [SerializeField] private Text _coinText;
-        [SerializeField] private Image _image;
+        [SerializeField] private Text _currentQuantityStar;
         [SerializeField] private Text _quantityStar;
+        [SerializeField] private Image _image;
 
-        public static event Action<Image> _winnerImage;
-
-        private int _quantityCoin = 0;
+        private int _quantity;
 
         private void OnEnable()
         {
-            StarController._coin += Result;
+            StarController.star += TakeStar;
         }
 
         private void OnDisable()
         {
-            StarController._coin -= Result;
+            StarController.star -= TakeStar;
         }
 
-        private void Result(int value)
+        private void TakeStar(int value)
         {
-            _quantityCoin += value;
-
-            _coinText.text = "Star quantity: " + _quantityCoin.ToString();
+            _quantity += value;
+            _currentQuantityStar.text =": "+ _quantity.ToString();
+            _quantityStar.text = _quantity.ToString();
         }
 
         private void OnCollisionEnter(Collision other)
         {
-            _winnerImage?.Invoke(_image);
             _quantityStar.gameObject.SetActive(false);
         }
     }

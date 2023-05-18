@@ -11,24 +11,15 @@ namespace WildBall.Inputs
 
     public class PlayerInput : MonoBehaviour
     {
-        [SerializeField] private Star _starObject;
         [SerializeField] private GameObject _canvasLose;
         [SerializeField] private ParticleSystem _particle;
-        [SerializeField] private Text _text;
         [SerializeField] private Image _menu;
-
-        private  int _quantity=0;
 
         private Animator _animations;
 
         private Vector3 _movement;
 
         private PlayerMovement _playerMovement;
-
-        private void Start()
-        {
-            _text.text = ": " + _starObject.AddStar(_quantity);
-        }
 
         private void Awake()
         {
@@ -67,34 +58,11 @@ namespace WildBall.Inputs
             }
         }
 
-        private void OnEnable()
-        {
-            StarController._coin += TakeCoin;
-            ResultWinner._winnerImage += ShowWinner;
-        }
-
-        private void OnDisable()
-        {
-            StarController._coin -= TakeCoin;
-            ResultWinner._winnerImage -= ShowWinner;
-        }
-
-        private void TakeCoin(int value)
-        {
-            _quantity += value;
-            _text.text = ": " + _quantity.ToString();
-        }
-
         private IEnumerator timer()
         {
             _animations.SetTrigger("Died");
             yield return new WaitForSecondsRealtime(1f);
             Time.timeScale = 0;
-        }
-
-        public void ShowWinner(Image image)
-        {
-            image.gameObject.SetActive(true);      
         }
     }
 }

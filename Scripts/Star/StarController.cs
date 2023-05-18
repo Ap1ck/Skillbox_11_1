@@ -2,18 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(Collider))]
 
 public class StarController : MonoBehaviour
 {
     [SerializeField] private ParticleSystem _starPartical;
+    [SerializeField] private Text _starQuantityText;
 
     private Animator _starAnimation;
 
-    private int _quantityCoin = 1;
+    private int _quatnity = 1;
 
-    public static event Action<int> _coin;
+    public static event Action<int> star;
 
     private void Start()
     {
@@ -24,14 +26,14 @@ public class StarController : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            _coin?.Invoke(_quantityCoin);
+            star?.Invoke(_quatnity);
             _starAnimation.SetTrigger("Destroy");
-            Coroutine star = StartCoroutine(deleted());
+            Coroutine starCoroutine = StartCoroutine(deleted());
         }
     }
 
     private IEnumerator deleted()
-    {
+    { 
         _starPartical.gameObject.SetActive(true);
         _starPartical.Play();
         yield return new WaitForSecondsRealtime(0.5f);

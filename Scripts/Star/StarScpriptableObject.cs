@@ -5,11 +5,11 @@ using UnityEngine.UI;
 
 [CreateAssetMenu(fileName = "Star", menuName = "ScriptableObjects/StarScriptableObject")]
 
-public class Star : ScriptableObject
+public class StarScpriptableObject : ScriptableObject
 {
     private  int _coin=0;
 
-    public  int AddStar(int value)
+    public int AddStar(int value)
     {
         _coin += value;
         return _coin;
