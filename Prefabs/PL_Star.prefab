@@ -133,6 +133,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8494894864471953895}
     m_Modifications:
+    - target: {fileID: 4789263001948590732, guid: c278e9a8cf9208c4d9f9dba9be796546, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b104435d19a5fb546ae250f2ab3ec446, type: 2}
     - target: {fileID: 4789263001950850124, guid: c278e9a8cf9208c4d9f9dba9be796546, type: 3}
       propertyPath: m_Name
       value: Star
@@ -230,6 +234,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _starPartical: {fileID: 5840333303040281292}
+  _starQuantityText: {fileID: 0}
 --- !u!114 &8345015387056424729
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -242,7 +247,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85742ea905fa4dd49bcc3d77faf3db4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _coinText: {fileID: 0}
+  _currentQuantityStar: {fileID: 0}
+  _quantityStar: {fileID: 0}
+  _image: {fileID: 0}
 --- !u!4 &4005121240165788830 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4789263001950883948, guid: c278e9a8cf9208c4d9f9dba9be796546, type: 3}

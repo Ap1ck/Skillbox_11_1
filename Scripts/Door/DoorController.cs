@@ -17,15 +17,18 @@ public class DoorController : MonoBehaviour
         _animator = GetComponent<Animator>();
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        _animator.SetTrigger("OpenDoor");
-
-        _openDoor.gameObject.SetActive(true);
-        _isActive = true;
+        if (other.gameObject.tag=="Player")
+        {
+            _animator.SetTrigger("OpenDoor");
+            _openDoor.gameObject.SetActive(true);
+            _isActive = true;
+            Debug.Log("Triggered");
+        }
     }
 
-    private void OnCollisionExit(Collision collision)
+    private void OnTriggerExit(Collider other)
     {
         _openDoor.gameObject.SetActive(false);
         _isActive = false;
@@ -41,7 +44,7 @@ public class DoorController : MonoBehaviour
 
     private void StartNextScene()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.E))
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + _index);
         }

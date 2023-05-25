@@ -17,23 +17,14 @@ namespace WildBall.Inputs
 
         private Animator _animations;
 
-        private Vector3 _movement;
-
-        private PlayerMovement _playerMovement;
-
         private void Awake()
         {
             _animations = GetComponent<Animator>();
-            _playerMovement = GetComponent<PlayerMovement>();
             Cursor.lockState = CursorLockMode.Locked;
         }
 
         private void Update()
         {
-            float horizontal = Input.GetAxis(GlobalStringVariors.Horizontal);
-            float vertical = Input.GetAxis(GlobalStringVariors.Vertical);
-            _movement = new Vector3(horizontal, 0, vertical).normalized;
-
             if (Input.GetKeyDown(KeyCode.Escape))
             {
                 _menu.gameObject.SetActive(true);
@@ -41,14 +32,9 @@ namespace WildBall.Inputs
             }
         }
 
-        private void FixedUpdate()
+        private void OnTriggerEnter(Collider collision)
         {
-            _playerMovement.MoveCharecter(_movement);
-        }
-
-        private void OnCollisionEnter(Collision collision)
-        {
-            if (collision.gameObject.tag == "Zone_Lose")
+            if (collision.gameObject.CompareTag("Zone_Lose"))
             {
                 Cursor.lockState = CursorLockMode.Confined;
                 _particle.gameObject.SetActive(true);

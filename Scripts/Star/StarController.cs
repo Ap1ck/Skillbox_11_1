@@ -36,7 +36,7 @@ public class StarController : MonoBehaviour
     { 
         _starPartical.gameObject.SetActive(true);
         _starPartical.Play();
-        yield return new WaitForSecondsRealtime(0.5f);
+        yield return new WaitForSecondsRealtime(0.25f);
         Destroy(gameObject);
     }
 }
