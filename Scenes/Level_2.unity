@@ -4250,7 +4250,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 894612748915746987, guid: 9f759168e29f5654ab0e303e6927a84f, type: 3}
       propertyPath: _sensitivity
-      value: 200
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 894612750370708889, guid: 9f759168e29f5654ab0e303e6927a84f, type: 3}
       propertyPath: field of view

@@ -4,39 +4,42 @@ using UnityEngine;
 using System;
 using UnityEngine.UI;
 
-[RequireComponent(typeof(Collider))]
-
-public class StarController : MonoBehaviour
+namespace WildBall.Inputs
 {
-    [SerializeField] private ParticleSystem _starPartical;
-    [SerializeField] private Text _starQuantityText;
-
-    private Animator _starAnimation;
-
-    private int _quatnity = 1;
-
-    public static event Action<int> star;
-
-    private void Start()
+    [RequireComponent(typeof(Collider))]
+    public class StarController : MonoBehaviour
     {
-        _starAnimation = GetComponent<Animator>();
-    }
+        [SerializeField] private ParticleSystem _starPartical;
+        [SerializeField] private Text _starQuantityText;
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.tag == "Player")
+        private Animator _starAnimation;
+
+        private int _quatnity = 1;
+
+        public static event Action<int> star;
+
+        private void Start()
         {
-            star?.Invoke(_quatnity);
-            _starAnimation.SetTrigger("Destroy");
-            Coroutine starCoroutine = StartCoroutine(deleted());
+            _starAnimation = GetComponent<Animator>();
+        }
+
+        private void OnTriggerEnter(Collider other)
+        {
+            if (other.gameObject.CompareTag("Player"))
+            {
+                star?.Invoke(_quatnity);
+                _starAnimation.SetTrigger("Destroy");
+                Coroutine starCoroutine = StartCoroutine(deleted());
+            }
+        }
+
+        private IEnumerator deleted()
+        {
+            _starPartical.gameObject.SetActive(true);
+            _starPartical.Play();
+            yield return new WaitForSecondsRealtime(0.25f);
+            Destroy(gameObject);
         }
     }
-
-    private IEnumerator deleted()
-    { 
-        _starPartical.gameObject.SetActive(true);
-        _starPartical.Play();
-        yield return new WaitForSecondsRealtime(0.25f);
-        Destroy(gameObject);
-    }
 }
+

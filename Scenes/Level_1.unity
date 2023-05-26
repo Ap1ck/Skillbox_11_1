@@ -4288,6 +4288,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 894612748915746987, guid: 9f759168e29f5654ab0e303e6927a84f, type: 3}
+      propertyPath: _sensitivity
+      value: 200
+      objectReference: {fileID: 0}
     - target: {fileID: 894612750370708894, guid: 9f759168e29f5654ab0e303e6927a84f, type: 3}
       propertyPath: m_LocalRotation.w
       value: 0.9902094
@@ -4384,6 +4388,22 @@ PrefabInstance:
       propertyPath: _canvasLose
       value: 
       objectReference: {fileID: 1805529744}
+    - target: {fileID: 6916332045149669506, guid: 9f759168e29f5654ab0e303e6927a84f, type: 3}
+      propertyPath: _gravity
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6916332045149669506, guid: 9f759168e29f5654ab0e303e6927a84f, type: 3}
+      propertyPath: _speedRun
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6916332045149669506, guid: 9f759168e29f5654ab0e303e6927a84f, type: 3}
+      propertyPath: _jumpPower
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6916332045149669506, guid: 9f759168e29f5654ab0e303e6927a84f, type: 3}
+      propertyPath: _speedWalk
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6916332045914483413, guid: 9f759168e29f5654ab0e303e6927a84f, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.57

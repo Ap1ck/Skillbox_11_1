@@ -24,7 +24,6 @@ public class DoorController : MonoBehaviour
             _animator.SetTrigger("OpenDoor");
             _openDoor.gameObject.SetActive(true);
             _isActive = true;
-            Debug.Log("Triggered");
         }
     }
 
