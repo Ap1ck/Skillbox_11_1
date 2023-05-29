@@ -7,24 +7,19 @@ namespace WildBall.Inputs
         [SerializeField] private float _speedWalk;
         [SerializeField] private float _gravity;
         [SerializeField] private float _jumpPower;
-        [SerializeField] private float _speedRun;
 
         private CharacterController _characterController;
         private Vector3 _walkDirection;
         private Vector3 _velocity;
-        private float _speed;
-
+       
         private void Start()
         {
-            _speed = _speedWalk;
             _characterController = GetComponent<CharacterController>();
         }
 
         private void Update()
         {
             Jump(Input.GetKey(KeyCode.Space) && _characterController.isGrounded);
-            Run(Input.GetKey(KeyCode.LeftShift));
-            Sit(Input.GetKey(KeyCode.LeftControl));
             float x = Input.GetAxis("Horizontal");
             float z = Input.GetAxis("Vertical");
             _walkDirection = transform.right * x + transform.forward * z;
@@ -53,16 +48,6 @@ namespace WildBall.Inputs
         {
             if (canJump)
                 _velocity.y = _jumpPower;
-        }
-
-        private void Run(bool canRun)
-        {
-            _speedWalk = canRun ? _speedRun : _speed;
-        }
-
-        private void Sit(bool canSit)
-        {
-            _characterController.height = canSit ? 1f : 2f;
         }
     }
 }
