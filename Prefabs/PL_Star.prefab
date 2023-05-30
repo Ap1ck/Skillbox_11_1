@@ -190,8 +190,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.7692108, y: 3.5847325, z: 2.271872}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 4.4387836, y: 3.5847328, z: 2.821951}
+  m_Center: {x: 0.006672101, y: 0, z: 0.12574941}
 --- !u!114 &5953567938455211776
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -220,7 +220,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentQuantityStar: {fileID: 0}
   _quantityStar: {fileID: 0}
-  _image: {fileID: 0}
 --- !u!4 &4005121240165788830 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4789263001950883948, guid: c278e9a8cf9208c4d9f9dba9be796546, type: 3}

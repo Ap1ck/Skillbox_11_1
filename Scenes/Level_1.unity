@@ -311,7 +311,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3724543934698464330, guid: a0b596e07825d164ba8b2ba6375a52f6, type: 3}
       propertyPath: m_IsTrigger
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5953567938455211776, guid: a0b596e07825d164ba8b2ba6375a52f6, type: 3}
       propertyPath: _starText
@@ -485,7 +485,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentQuantityStar: {fileID: 252859477}
   _quantityStar: {fileID: 766425287}
-  _image: {fileID: 766425288}
 --- !u!1001 &766425286
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1629,6 +1628,38 @@ PrefabInstance:
     - target: {fileID: 4336160792282553634, guid: c44b0b13d17992f40add6c267c6de06f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4336160792282553635, guid: c44b0b13d17992f40add6c267c6de06f, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4336160792282553635, guid: c44b0b13d17992f40add6c267c6de06f, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4336160792282553635, guid: c44b0b13d17992f40add6c267c6de06f, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4336160792282553635, guid: c44b0b13d17992f40add6c267c6de06f, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4336160792282553635, guid: c44b0b13d17992f40add6c267c6de06f, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 4336160792282553635, guid: c44b0b13d17992f40add6c267c6de06f, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 4336160792282553635, guid: c44b0b13d17992f40add6c267c6de06f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 4336160792282553635, guid: c44b0b13d17992f40add6c267c6de06f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -50
       objectReference: {fileID: 0}
     - target: {fileID: 4336160793053989953, guid: c44b0b13d17992f40add6c267c6de06f, type: 3}
       propertyPath: m_Pivot.x
@@ -4406,7 +4437,7 @@ PrefabInstance:
       objectReference: {fileID: 1805529744}
     - target: {fileID: 6916332045149669506, guid: 9f759168e29f5654ab0e303e6927a84f, type: 3}
       propertyPath: _gravity
-      value: 20
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 6916332045149669506, guid: 9f759168e29f5654ab0e303e6927a84f, type: 3}
       propertyPath: _speedRun
@@ -4414,7 +4445,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6916332045149669506, guid: 9f759168e29f5654ab0e303e6927a84f, type: 3}
       propertyPath: _jumpPower
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6916332045149669506, guid: 9f759168e29f5654ab0e303e6927a84f, type: 3}
       propertyPath: _speedWalk

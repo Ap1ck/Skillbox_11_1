@@ -10,7 +10,6 @@ namespace WildBall.Inputs
     {
         [SerializeField] private Text _currentQuantityStar;
         [SerializeField] private Text _quantityStar;
-        [SerializeField] private Image _image;
 
         private int _quantity;
 
