@@ -246,9 +246,13 @@ PrefabInstance:
       propertyPath: m_AdditionalShaderChannelsFlag
       value: 25
       objectReference: {fileID: 0}
-    - target: {fileID: 5933432532849762876, guid: c44b0b13d17992f40add6c267c6de06f, type: 3}
+    - target: {fileID: 5284040194990374911, guid: c44b0b13d17992f40add6c267c6de06f, type: 3}
       propertyPath: m_RootOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5933432532849762876, guid: c44b0b13d17992f40add6c267c6de06f, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6358661994517600500, guid: c44b0b13d17992f40add6c267c6de06f, type: 3}
       propertyPath: m_Text
@@ -278,6 +282,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &25656930 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5284040194990374908, guid: c44b0b13d17992f40add6c267c6de06f, type: 3}
+  m_PrefabInstance: {fileID: 25656927}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &73608861
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3284,11 +3293,6 @@ ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 4497949433300456931, guid: a0b596e07825d164ba8b2ba6375a52f6, type: 3}
   m_PrefabInstance: {fileID: 1905888839}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1752955658 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4047118546249850273, guid: c44b0b13d17992f40add6c267c6de06f, type: 3}
-  m_PrefabInstance: {fileID: 25656927}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1774100428
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4547,7 +4551,7 @@ PrefabInstance:
     - target: {fileID: 6021861185178394579, guid: 9f759168e29f5654ab0e303e6927a84f, type: 3}
       propertyPath: _canvasLose
       value: 
-      objectReference: {fileID: 1752955658}
+      objectReference: {fileID: 0}
     - target: {fileID: 6021861185178394579, guid: 9f759168e29f5654ab0e303e6927a84f, type: 3}
       propertyPath: _starObject
       value: 
@@ -4567,7 +4571,7 @@ PrefabInstance:
     - target: {fileID: 6916332045149669505, guid: 9f759168e29f5654ab0e303e6927a84f, type: 3}
       propertyPath: _canvasLose
       value: 
-      objectReference: {fileID: 1752955658}
+      objectReference: {fileID: 25656930}
     - target: {fileID: 6916332045149669506, guid: 9f759168e29f5654ab0e303e6927a84f, type: 3}
       propertyPath: _gravity
       value: 25

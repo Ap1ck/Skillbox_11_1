@@ -1328,7 +1328,7 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: c44b0b13d17992f40add6c267c6de06f, type: 3}
 --- !u!1 &264034095 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 4047118546249850273, guid: c44b0b13d17992f40add6c267c6de06f, type: 3}
+  m_CorrespondingSourceObject: {fileID: 5284040194990374908, guid: c44b0b13d17992f40add6c267c6de06f, type: 3}
   m_PrefabInstance: {fileID: 264034094}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &264034096 stripped
@@ -4661,7 +4661,7 @@ PrefabInstance:
     - target: {fileID: 803663311773600106, guid: 9f759168e29f5654ab0e303e6927a84f, type: 3}
       propertyPath: _canvasLose
       value: 
-      objectReference: {fileID: 264034095}
+      objectReference: {fileID: 0}
     - target: {fileID: 894612750370708894, guid: 9f759168e29f5654ab0e303e6927a84f, type: 3}
       propertyPath: m_LocalPosition.y
       value: 6.37
@@ -4741,7 +4741,7 @@ PrefabInstance:
     - target: {fileID: 6021861185178394579, guid: 9f759168e29f5654ab0e303e6927a84f, type: 3}
       propertyPath: _canvasLose
       value: 
-      objectReference: {fileID: 264034095}
+      objectReference: {fileID: 0}
     - target: {fileID: 6916332045149669505, guid: 9f759168e29f5654ab0e303e6927a84f, type: 3}
       propertyPath: _menu
       value: 
